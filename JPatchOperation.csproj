@@ -36,6 +36,7 @@
   <ItemGroup>
     <Reference Include="Assembly-CSharp">
       <HintPath>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -47,10 +48,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PatchOperationAddCopy.cs" />
-    <Compile Include="PatchOperationAddOrMerge.cs" />
-    <Compile Include="PatchOperationAddOrMergeCopy.cs" />
-    <Compile Include="PatchOperationOffsetField.cs" />
+    <Compile Include="PatchOperations\PatchOperationAddCopy.cs" />
+    <Compile Include="PatchOperations\PatchOperationAddOrMerge.cs" />
+    <Compile Include="PatchOperations\PatchOperationAddOrMergeCopy.cs" />
+    <Compile Include="PatchOperations\PatchOperationOffsetField.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
